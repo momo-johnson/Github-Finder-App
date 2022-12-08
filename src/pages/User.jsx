@@ -25,7 +25,6 @@ function User(props) {
         },
       });
       const userAndRepos = await getUserAndRepos(params.login);
-      console.log(userAndRepos);
       dispatch({
         type: "GET_USER_AND_REPOS",
         payload: {
